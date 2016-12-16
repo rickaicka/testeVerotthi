@@ -39,3 +39,39 @@ header {
             font-weight: 400; }
           header .user ul li .dropMenu li:nth-child(1) {
             border-bottom: 1px solid #c6c6c6; }
+
+.wrapContainer {
+  height: 100%; }
+  .wrapContainer .container-fluid, .wrapContainer .row {
+    height: 100%; }
+  .wrapContainer .menuLateral {
+    height: 100%;
+    background-color: #007dc6; }
+    .wrapContainer .menuLateral ul {
+      margin-top: 20px; }
+      .wrapContainer .menuLateral ul li {
+        padding: 25px;
+        background-color: transparent;
+        -webkit-transition: background-color, 0.2s;
+        transition: background-color, 0.2s; }
+        .wrapContainer .menuLateral ul li a {
+          font-family: 'Raleway', sans-serif;
+          font-size: 1.1em;
+          color: #3f3f3f;
+          font-weight: 700;
+          letter-spacing: 2px;
+          color: #ffffff;
+          text-transform: uppercase; }
+          .wrapContainer .menuLateral ul li a i {
+            margin-right: 10px;
+            width: 40px;
+            color: #ffc220;
+            font-size: 1.3em; }
+          .wrapContainer .menuLateral ul li a:hover, .wrapContainer .menuLateral ul li a:active, .wrapContainer .menuLateral ul li a:focus {
+            text-decoration: none;
+            background-color: transparent; }
+        .wrapContainer .menuLateral ul li:hover, .wrapContainer .menuLateral ul li:active, .wrapContainer .menuLateral ul li:focus {
+          background-color: rgba(255, 255, 255, 0.3);
+          cursor: pointer; }
+  .wrapContainer .content {
+    margin-top: 20px; }

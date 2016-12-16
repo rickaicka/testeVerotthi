@@ -1,62 +1,85 @@
 <!DOCTYPE html>
-<html lang="">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Teste Verotthi</title>
-    
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,700">
-    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/slicknav.min.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <!--build:css-->
-    <link rel="stylesheet" href="css/style.min.css">
-    <!--endbuild-->
-</head>
+<html ng-app="Main">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
-    <header>
-        <div class="container fluid">
-            <div class="row">
-                <div class="logo col-xs-12 col-md-offset-1 col-md-2">
-                    <a href="#/">
-                        <img src="img/logo_white.png" class="img-responsive">
-                    </a>
-                </div>
-                <div class="user col-xs-12 col-md-offset-6 col-md-3">
-                    <ul>
-                        <li>
-                            <i class="fa fa-user"></i>
-                        </li>
-                        <li>
-                            <span>Ricardo <i class="fa fa-caret-down bottomMenu"></i></span>
-                            <ul class="dropMenu col-md-8">
-                                <li>
-                                    <a href="#/perfil">Meu Perfil</a>
-                                </li>
-                                <li>
-                                    <a href="#/logout">Logout</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+        <title>Teste Verotthi</title>
+
+        <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,700">
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/slicknav.min.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <!--build:css-->
+        <link rel="stylesheet" href="css/style.min.css">
+        <!--endbuild-->
+    </head>
+
+    <body>
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="logo col-xs-12 col-md-offset-1 col-md-2">
+                        <a href="#/">
+                            <img src="img/logo_white.png" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="user col-xs-12 col-md-offset-6 col-md-3">
+                        <ul>
+                            <li>
+                                <i class="fa fa-user-circle-o"></i>
+                            </li>
+                            <li>
+                                <span>Ricardo <i class="fa fa-caret-down bottomMenu"></i></span>
+                                <ul class="dropMenu col-md-8">
+                                    <li>
+                                        <a href="#/perfil">Meu Perfil</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/logout">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    
+        </header>
 
-    <footer>
-        <script src="vendor/angular/angular.min.js"></script>
-        <script src="vendor/angular-route/angular-route.min.js"></script>
-        <script src="vendor/angular-resource/angular-resource.min.js"></script>
-        <script src="vendor/jquery/dist/jquery.min.js"></script>
-        <script src="js/jquery.slicknav.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/geral.js"></script>
-    </footer>
-</body>
+        <section class="wrapContainer">
+            <div class="container-fluid">
+                <div class="row">
+                    <aside class="menuLateral col-xs-4 col-md-3">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#/pedidos"><i class="fa fa-truck"></i>Meus Pedidos</a>
+                                </li>
+                                <li>
+                                    <a href="#/enderecos"><i class="fa fa-address-card-o"></i>Meus Endereços</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <section class="content col-xs-8 col-md-8">
+                        <ng-view></ng-view>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <div class="clearfix"></div>
+
+        <footer>
+            <script src="vendor/angular/angular.min.js"></script>
+            <script src="vendor/angular-route/angular-route.min.js"></script>
+            <script src="vendor/angular-resource/angular-resource.min.js"></script>
+            <script src="vendor/jquery/dist/jquery.min.js"></script>
+            <script src="js/jquery.slicknav.min.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/geral.js"></script>
+            <script src="js/controllers/PedidosController.js"></script>
+        </footer>
+    </body>
 </html>

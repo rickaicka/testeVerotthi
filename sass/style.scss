@@ -29,6 +29,10 @@ $break-small: 40em;
     font-weight: 700;
 }
 
+@mixin transitionMX($propriedade, $tempo){
+    transition: $propriedade, $tempo;
+}
+
 @media screen and (min-width:1280px) and (max-width:1440px){
 }
 @media screen and (max-width: $break-small){
@@ -82,3 +86,46 @@ header{
         }
     }
 }
+
+.wrapContainer{
+        height: 100%;
+    & .container-fluid, & .row{
+        height: 100%;
+    }
+    & .menuLateral{
+        height: 100%;
+        background-color: $azul;
+        & ul{
+            margin-top: 20px;
+            & li{
+                padding: 25px;
+                background-color: transparent;
+                @include transitionMX(background-color, 0.2s);
+                & a{
+                    @include fontBoldMX(1.1em);
+                    letter-spacing: 2px;
+                    color: $branco;
+                    text-transform: uppercase;
+                    & i{
+                        margin-right: 10px;
+                        width: 40px;
+                        color: $amarelo;
+                        font-size: 1.3em;
+                    }
+                    &:hover, &:active, &:focus{
+                        text-decoration: none;
+                        background-color: transparent;
+                    }
+                }
+                &:hover, &:active, &:focus{
+                    background-color: rgba(255,255,255,0.3);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    & .content{
+        margin-top: 20px;
+    }
+}
+
