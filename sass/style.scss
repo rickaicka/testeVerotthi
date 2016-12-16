@@ -1,0 +1,84 @@
+
+$azul: #007dc6;
+$amarelo: #ffc220;
+$branco: #ffffff;
+$cinza: #3f3f3f;
+$cinzaClaro: #c6c6c6;
+$break-small: 40em;
+
+
+
+@mixin fontLightMX($fontSize){
+    font-family: 'Raleway', sans-serif;
+    font-size: $fontSize;
+    color: $cinza;
+    font-weight: 300;
+}
+
+@mixin fontPadraoMX($fontSize){
+    font-family: 'Raleway', sans-serif;
+    font-size: $fontSize;
+    color: $cinza;
+    font-weight: 400;
+}
+
+@mixin fontBoldMX($fontSize){
+    font-family: 'Raleway', sans-serif;
+    font-size: $fontSize;
+    color: $cinza;
+    font-weight: 700;
+}
+
+@media screen and (min-width:1280px) and (max-width:1440px){
+}
+@media screen and (max-width: $break-small){
+
+}
+
+header{
+    background-color: $azul;
+    padding: 20px 0;
+    & .user{
+    padding: 10px 0;
+        & ul{
+            & li{
+                display: inline-block;
+                & i{
+                    color: $amarelo;
+                    font-size: 1.3em;
+                }
+                & span{
+                    @include fontBoldMX(1.3em);
+                    color: $branco;
+                    padding-left: 15px;
+                    & i{
+                        padding-left: 10px;
+                        cursor: pointer;
+                        font-size: 1em;
+                    }
+                }
+                & .dropMenu{
+                    background-color: $branco;
+                    position: absolute;
+                    top: 35px;
+                    left: 31px;
+                    border: 1px solid $cinzaClaro;
+                    padding-right: 0;
+                    padding-left: 0;
+                    display: none;
+                    & li{
+                        display: block;
+                        padding: 15px 0;
+                        padding-left: 15px;
+                        & a{
+                            @include fontPadraoMX(1em);
+                        }
+                        &:nth-child(1){
+                            border-bottom: 1px solid $cinzaClaro;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
