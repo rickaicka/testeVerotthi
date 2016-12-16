@@ -1,1 +1,9 @@
-<h1>{{texto}}</h1>
+<ul>
+    <li ng-repeat="pedido in listaPedidos">
+        <ul>
+            <li><p>{{pedido.nome}}</p></li>
+            <li><p>{{pedido.descricao}}</p></li>
+            <li><img src="img/{{pedido.imagem}}"></li>
+        </ul>
+    </li>
+</ul>

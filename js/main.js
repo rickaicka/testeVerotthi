@@ -10,6 +10,11 @@ angular.module('Main', ['ngRoute','ngResource']).config(function($routeProvider,
         controller:'PedidosController'
     });
 
+    $routeProvider.when('/pedidos/:pedidoId', {
+        templateUrl:'partials/pedido.html',
+        controller:'PedidosController'
+    });
+
     $routeProvider.when('/enderecos',{
         templateUrl:'partials/enderecos.html',
         controller:'EnderecosController'
