@@ -1,0 +1,23 @@
+{
+  "name": "verotthi",
+  "description": "Teste Verotthi",
+  "main": "index.js",
+  "authors": [
+    "Ricka <ricardosalim7@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/rickaicka/testeVerotthi",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "angular-route": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}
