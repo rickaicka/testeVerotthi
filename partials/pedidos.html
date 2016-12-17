@@ -1,9 +1,29 @@
-<ul>
-    <li ng-repeat="pedido in listaPedidos">
-        <ul>
-            <li><p>{{pedido.nome}}</p></li>
-            <li><p>{{pedido.descricao}}</p></li>
-            <li><img src="img/{{pedido.imagem}}"></li>
-        </ul>
-    </li>
-</ul>
+<div class="topPage">
+    <ul class="col-md-11">
+        <li>
+            <h4>Meus Pedidos</h4>
+        </li>
+    </ul>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="tabelaPedidos table-responsive col-md-10">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th colspan="2">Produto</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="pedido in listaPedidos">
+                <td><img src="img/{{pedido.imagem}}"></td>
+                <td>{{pedido.nome}}</td>
+                <td>{{pedido.descricao}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="clearfix"></div>

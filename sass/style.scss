@@ -129,3 +129,41 @@ header{
     }
 }
 
+.topPage{
+    & ul{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-bottom: solid 3px $cinzaClaro;
+        margin-bottom: 25px;
+        & li{
+            & h4{
+                @include fontBoldMX(2em);
+            }
+        }
+    }
+}
+
+.tabelaPedidos{
+    & thead{
+        & tr{
+            & th{
+                @include fontBoldMX(1.2em);
+            }
+        }
+    }
+    & tbody{
+        & tr{
+            & td{
+                @include fontPadraoMX(1em);
+                vertical-align: middle;
+                & img{
+                    height: 125px;
+                    width: auto;
+                }
+                &:nth-child(2){
+                    min-width: 150px;
+                }
+            }
+        }
+    }
+}

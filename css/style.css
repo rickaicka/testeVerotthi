@@ -75,3 +75,32 @@ header {
           cursor: pointer; }
   .wrapContainer .content {
     margin-top: 20px; }
+
+.topPage ul {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: solid 3px #c6c6c6;
+  margin-bottom: 25px; }
+  .topPage ul li h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
+    color: #3f3f3f;
+    font-weight: 700; }
+
+.tabelaPedidos thead tr th {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  color: #3f3f3f;
+  font-weight: 700; }
+
+.tabelaPedidos tbody tr td {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  color: #3f3f3f;
+  font-weight: 400;
+  vertical-align: middle; }
+  .tabelaPedidos tbody tr td img {
+    height: 125px;
+    width: auto; }
+  .tabelaPedidos tbody tr td:nth-child(2) {
+    min-width: 150px; }
