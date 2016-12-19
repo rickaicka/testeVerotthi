@@ -1,6 +1,6 @@
 # Teste Verotthi
 
-Para rodar a landing page, baixar o repositório,
+Para rodar o teste, baixar o repositório,
 acessar via cmd a pasta e ativar o comando 
 ``` 
 node server
