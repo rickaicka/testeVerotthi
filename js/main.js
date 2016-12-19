@@ -16,12 +16,12 @@ angular.module('Main', ['ngRoute','ngResource']).config(function($routeProvider,
     });
 
     $routeProvider.when('/perfil',{
-        templateUrl:'partials/perfil.html',
-        controller:'PerfilController'
+        templateUrl:'partials/perfil.html'
     });
 
     $routeProvider.when('/logout',{
-        templateUrl:'partials/logout.html'
+        templateUrl:'partials/logout.html',
+        controller:'LogoutController'
     });
 
 
