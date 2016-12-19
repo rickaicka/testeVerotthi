@@ -81,7 +81,21 @@
           font-size: 2em;
           color: #3f3f3f;
           position: absolute;
-          bottom: 5px; } }
+          bottom: 5px; }
+  .enderecoPrincipal ul {
+    padding-right: 10px; }
+    .enderecoPrincipal ul li p {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.1em !important;
+      color: #3f3f3f;
+      font-weight: 700; }
+    .enderecoPrincipal ul i {
+      height: 150px !important;
+      padding-top: 15px; }
+  .enderecosSecundarios ul {
+    margin-bottom: 15px; }
+    .enderecosSecundarios ul li i {
+      padding-top: 10px; } }
 
 .slicknav_menu {
   display: none; }

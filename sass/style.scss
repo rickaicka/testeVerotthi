@@ -133,6 +133,34 @@ $break-small: 40em;
             }
         }
     }
+
+    .enderecoPrincipal{
+        & ul{
+            padding-right: 10px;
+            & li{
+                & p{
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 1.1em!important;
+                    color: $cinza;
+                    font-weight: 700;
+                }
+            }
+            & i{
+                height: 150px!important;
+                padding-top: 15px
+            }
+        }
+    }
+    .enderecosSecundarios{
+        & ul{
+            margin-bottom: 15px;
+            & li{
+                & i{
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
 }
 
 .slicknav_menu{
