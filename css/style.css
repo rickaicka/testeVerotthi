@@ -1,13 +1,92 @@
 @media screen and (max-width: 40em) {
   .slicknav_menu {
-    display: block !important; }
+    display: block !important;
+    background-color: #007dc6; }
+    .slicknav_menu .slicknav_btn {
+      background-color: #00588c;
+      left: 43%;
+      float: left; }
+    .slicknav_menu .slicknav_nav ul {
+      padding-left: 0;
+      margin-left: 0; }
+      .slicknav_menu .slicknav_nav ul li {
+        padding: 10px;
+        padding-left: 0;
+        background-color: transparent;
+        -webkit-transition: background-color, 0.2s;
+        transition: background-color, 0.2s; }
+        .slicknav_menu .slicknav_nav ul li a {
+          font-family: 'Raleway', sans-serif;
+          font-size: 1.1em;
+          color: #3f3f3f;
+          font-weight: 700;
+          letter-spacing: 2px;
+          color: #ffffff;
+          text-transform: uppercase; }
+          .slicknav_menu .slicknav_nav ul li a i {
+            margin-right: 10px;
+            width: 40px;
+            color: #ffc220;
+            font-size: 1.3em; }
+          .slicknav_menu .slicknav_nav ul li a:hover, .slicknav_menu .slicknav_nav ul li a:active, .slicknav_menu .slicknav_nav ul li a:focus {
+            text-decoration: none;
+            background-color: transparent; }
+        .slicknav_menu .slicknav_nav ul li:hover, .slicknav_menu .slicknav_nav ul li:active, .slicknav_menu .slicknav_nav ul li:focus {
+          background-color: rgba(255, 255, 255, 0.3);
+          cursor: pointer; }
   .dropMenu {
     left: 0 !important;
     z-index: 2; }
   .menuLateral {
-    display: none !important; } }
+    display: none !important; }
+  .tabelaPedidos {
+    display: none !important; }
+  .pedidosMobile {
+    display: block !important;
+    height: 380px; }
+    .pedidosMobile ul {
+      height: 100%; }
+      .pedidosMobile ul li ul li h2 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2em;
+        color: #3f3f3f;
+        font-weight: 700;
+        padding-bottom: 15px; }
+      .pedidosMobile ul li ul li p {
+        width: 90%;
+        white-space: normal;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+        color: #3f3f3f;
+        font-weight: 400; }
+      .pedidosMobile ul li ul li img {
+        height: 200px; }
+      .pedidosMobile ul .arrow {
+        z-index: 9;
+        position: absolute;
+        bottom: 0px;
+        float: right;
+        left: 35%; }
+        .pedidosMobile ul .arrow p {
+          font-family: 'Raleway', sans-serif;
+          font-size: 0.8em;
+          color: #3f3f3f;
+          font-weight: 400;
+          color: #3f3f3f;
+          display: inline-block;
+          width: 150px;
+          margin-bottom: 15px;
+          padding-right: 20px; }
+        .pedidosMobile ul .arrow i {
+          font-size: 2em;
+          color: #3f3f3f;
+          position: absolute;
+          bottom: 5px; } }
 
 .slicknav_menu {
+  display: none; }
+
+.pedidosMobile {
   display: none; }
 
 header {
@@ -99,23 +178,24 @@ header {
     color: #3f3f3f;
     font-weight: 700; }
 
-.tabelaPedidos thead tr th {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.2em;
-  color: #3f3f3f;
-  font-weight: 700; }
-
-.tabelaPedidos tbody tr td {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1em;
-  color: #3f3f3f;
-  font-weight: 400;
-  vertical-align: middle; }
-  .tabelaPedidos tbody tr td img {
-    height: 125px;
-    width: auto; }
-  .tabelaPedidos tbody tr td:nth-child(2) {
-    min-width: 150px; }
+.tabelaPedidos {
+  display: block; }
+  .tabelaPedidos thead tr th {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    color: #3f3f3f;
+    font-weight: 700; }
+  .tabelaPedidos tbody tr td {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: #3f3f3f;
+    font-weight: 400;
+    vertical-align: middle; }
+    .tabelaPedidos tbody tr td img {
+      height: 125px;
+      width: auto; }
+    .tabelaPedidos tbody tr td:nth-child(2) {
+      min-width: 150px; }
 
 .enderecoPrincipal {
   padding-left: 0; }

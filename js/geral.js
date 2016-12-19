@@ -5,4 +5,8 @@ $(document).ready(function(){
     $('.menuLateral').slicknav({
         label:""
     });
+    var windowsize = $(window).width();
+    if(windowsize <= 500){
+        $(".slicknav_menu").appendTo(".menuMobile");
+    }
 });

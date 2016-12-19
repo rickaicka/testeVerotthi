@@ -38,6 +38,44 @@ $break-small: 40em;
 @media screen and (max-width: $break-small){
     .slicknav_menu{
         display: block!important;
+        background-color: $azul;
+        & .slicknav_btn{
+            background-color: #00588c;
+            left: 43%;
+            float: left;
+        }
+        & .slicknav_nav{
+            & ul{
+                padding-left: 0;
+                margin-left: 0;
+                & li{
+                    padding: 10px;
+                    padding-left: 0;
+                    background-color: transparent;
+                    @include transitionMX(background-color, 0.2s);
+                    & a{
+                        @include fontBoldMX(1.1em);
+                        letter-spacing: 2px;
+                        color: $branco;
+                        text-transform: uppercase;
+                        & i{
+                            margin-right: 10px;
+                            width: 40px;
+                            color: $amarelo;
+                            font-size: 1.3em;
+                        }
+                        &:hover, &:active, &:focus{
+                            text-decoration: none;
+                            background-color: transparent;
+                        }
+                    }
+                    &:hover, &:active, &:focus{
+                        background-color: rgba(255,255,255,0.3);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
     .dropMenu{
         left:0!important;
@@ -46,9 +84,61 @@ $break-small: 40em;
     .menuLateral{
         display: none!important;
     }
+    .tabelaPedidos{
+        display: none!important;
+    }
+    .pedidosMobile{
+        display: block!important;
+        height: 380px;
+        & ul{
+            height: 100%;
+            & li{
+                & ul{
+                    & li{
+                        & h2{
+                            @include fontBoldMX(1.2em);
+                            padding-bottom: 15px;
+                        }
+                        & p{
+                            width: 90%;
+                            white-space: normal;
+                            @include fontPadraoMX(1em);
+                        }
+                        & img{
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+            & .arrow{
+                z-index:9;
+                position: absolute;
+                bottom: 0px;
+                float: right;
+                left: 35%;
+                & p{
+                    @include fontPadraoMX(0.8em);
+                    color: $cinza;
+                    display: inline-block;
+                    width: 150px;
+                    margin-bottom: 15px;
+                    padding-right: 20px;
+                }
+                & i{
+                    font-size: 2em;
+                    color: $cinza;
+                    position: absolute;
+                    bottom: 5px;
+                }
+            }
+        }
+    }
 }
 
 .slicknav_menu{
+    display: none;
+}
+.pedidosMobile{
     display: none;
 }
 header{
@@ -156,6 +246,7 @@ header{
 }
 
 .tabelaPedidos{
+    display: block;
     & thead{
         & tr{
             & th{

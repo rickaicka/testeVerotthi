@@ -27,3 +27,28 @@
 </div>
 
 <div class="clearfix"></div>
+
+<div class="pedidosMobile">
+    <ul rn-carousel class="box col-xs-12" >
+        <li ng-repeat="pedido in listaPedidos">
+            <ul>
+                <li>
+                    <img src="img/{{pedido.imagem}}">
+                </li>
+                <li>
+                    <h2>
+                        {{pedido.nome}}
+                    </h2>
+                </li>
+                <li>
+                    <p>
+                        {{pedido.descricao}}
+                    </p>
+                </li>
+            </ul>
+        </li>
+    <div class="arrow col-xs-12">
+        <p>Arraste para ver mais</p><i class="fa fa-angle-right"></i>
+    </div>
+    </ul>
+</div>

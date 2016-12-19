@@ -1,4 +1,4 @@
-angular.module('Main', ['ngRoute','ngResource']).config(function($routeProvider, $locationProvider){
+angular.module('Main', ['ngRoute', 'ngResource', 'angular-carousel']).config(function($routeProvider, $locationProvider){
 
     $routeProvider.when('/',{
         templateUrl:'partials/pedidos.html',
