@@ -160,3 +160,21 @@ header {
       color: #3f3f3f;
       font-weight: 700;
       padding-bottom: 10px; }
+
+.meuPerfil {
+  border: 5px solid #007dc6;
+  border-radius: 5px;
+  padding-top: 25px;
+  padding-bottom: 10px; }
+  .meuPerfil ul li {
+    margin-bottom: 10px; }
+    .meuPerfil ul li p {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1em;
+      color: #3f3f3f;
+      font-weight: 400; }
+      .meuPerfil ul li p strong {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2em;
+        color: #3f3f3f;
+        font-weight: 700; }
