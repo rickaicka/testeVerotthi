@@ -167,3 +167,59 @@ header{
         }
     }
 }
+.enderecoPrincipal{
+    padding-left: 0;
+    & h5{
+        @include fontBoldMX(1.2em);
+        margin-bottom: 10px;
+    }
+    & ul {
+        border: 5px solid $amarelo;
+        padding-top:25px ;
+        padding-bottom:10px ;
+        border-radius: 10px;
+        & i{
+            float: left;
+            color: $amarelo;
+            padding-right: 20px;
+            font-size: 4em;
+            height: 80px;
+            padding-left: 15px;
+        }
+        & li{
+            & p{
+                @include fontBoldMX(1.3em);
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+.enderecosSecundarios{
+    padding-left: 0;
+    margin-top: 25px;
+    & h5{
+        @include fontBoldMX(1.2em);
+        margin-bottom: 10px;
+    }
+    & ul{
+        border: 5px solid $azul;
+        padding-top:25px ;
+        padding-bottom:10px ;
+        border-radius: 10px;
+        display: inline-block;
+        margin-right: 10px;
+        & i{
+            float: left;
+            color: $azul;
+            padding-right: 20px;
+            font-size: 4em;
+            height: 80px;
+        }
+        & li{
+            & p{
+                @include fontBoldMX(1em);
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

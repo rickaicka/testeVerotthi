@@ -2,14 +2,13 @@ angular.module('Main').controller('PedidosController', function($scope, $resourc
     $scope.listaPedidos = [];
     $scope.filtro = '';
 
-    var Pedido = $resource('/pedidos/:id');
     var Pedidos = $resource('/pedidos');
 
     $scope.init = function(){
-        buscaPedido();
+        buscaPedidos();
     };
 
-    function buscaPedido(){
+    function buscaPedidos(){
         Pedidos.query(
             function(pedidos){
                 $scope.listaPedidos = pedidos;
@@ -19,19 +18,6 @@ angular.module('Main').controller('PedidosController', function($scope, $resourc
             }
         );
     };
-
-    function buscaPedidoPorId(id){
-        Pedido.get({id: $routeParams.pedidoId},
-            function(pedido){
-                $scope.pedido = pedido;
-            },
-            function(erro){
-                console.log("Não foi possível obter pedido");
-                console.log(erro);
-            }
-       );
-    };
-
 
     $scope.init();
 });

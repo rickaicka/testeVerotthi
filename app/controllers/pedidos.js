@@ -5,20 +5,11 @@ var pedidos =  [
         ];
 
 module.exports = function(){
+
     var controller = {};
     controller.listaPedidos = function(req, res){
         res.json(pedidos);
     };
-
-    controller.pedido = function(req, res){
-        var idPedido = req.params.id;
-        var pedido = produtos.filter(function(pedido){
-            return pedido._id == idPedido;
-        })[0];
-        pedido ? res.json(pedido) : res.status(404).send('Pedido não encontrado');
-    };
-
-
 
     return controller;
 }
