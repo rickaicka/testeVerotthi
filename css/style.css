@@ -1,3 +1,15 @@
+@media screen and (max-width: 40em) {
+  .slicknav_menu {
+    display: block !important; }
+  .dropMenu {
+    left: 0 !important;
+    z-index: 2; }
+  .menuLateral {
+    display: none !important; } }
+
+.slicknav_menu {
+  display: none; }
+
 header {
   background-color: #007dc6;
   padding: 20px 0; }

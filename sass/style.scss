@@ -36,9 +36,21 @@ $break-small: 40em;
 @media screen and (min-width:1280px) and (max-width:1440px){
 }
 @media screen and (max-width: $break-small){
-
+    .slicknav_menu{
+        display: block!important;
+    }
+    .dropMenu{
+        left:0!important;
+        z-index: 2;
+    }
+    .menuLateral{
+        display: none!important;
+    }
 }
 
+.slicknav_menu{
+    display: none;
+}
 header{
     background-color: $azul;
     padding: 20px 0;
